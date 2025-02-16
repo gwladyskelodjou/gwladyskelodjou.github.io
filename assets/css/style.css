@@ -33,7 +33,7 @@
 
 body {
   font-family: "BeVietnam-Regular";
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 400;
   /* color: hsl(227, 12%, 61%); */
   color: #272829;
@@ -375,7 +375,7 @@ section {
 .keyword {
   display: inline-block;
   padding: 4px 10px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   color: #555;
   border: 2px solid #ccc;
@@ -511,7 +511,7 @@ section {
 .course-title {
   /* color: darkred !important; */
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 1em;
 }
 
@@ -524,7 +524,7 @@ section {
 }
 
 .course-info i {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-right: 5px;
 }
 
@@ -549,22 +549,28 @@ section {
   margin-left: 30px;
 }
 .talk-info i {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-right: 8px;
 }
 
 .talk-title h4 {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 1em;
 }
 .talk {
   margin-bottom: 1.5em;
 }
 
+.talks-content {
+  margin-left: 30px !important;
+}
+
+
 /*--------------------------------------------------------------
 # Dissemination
 --------------------------------------------------------------*/
+
 .dissemination .dissemination-content{
   margin-left: 30px;
 }
@@ -583,7 +589,7 @@ section {
 }
 
 .dissemination .outreach-content {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .outreach-content h4 {
