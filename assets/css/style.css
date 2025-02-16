@@ -1,6 +1,7 @@
+
 /**
 * This file is the principle css file of the page
-* @author: @Kengza
+* @author: @GwladysKelodjou
 */
 
 /* Font-family import */
@@ -32,9 +33,28 @@
 
 body {
   font-family: "BeVietnam-Regular";
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 400;
-  color: hsl(227, 12%, 61%);
+  /* color: hsl(227, 12%, 61%); */
+  color: #272829;
+  text-align: justify;
+  /* padding: 0 2em; */
+  /* width: 95%; */
+}
+
+/* body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+} */
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
 }
 
 /* Titles */
@@ -42,635 +62,596 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
 }
 
-/* *********************** PAGE CONTAINER ***************************** */
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+} */
 
-
-/* ===================== Header =============================*/
-
-/******************** nav */
-nav {
-  padding: 4rem 9rem;
-}
-nav, .nav-wrapper {
-  box-shadow: none;
-  height: auto;
-  line-height: normal;
-  background-color: transparent;
-}
-nav li a {
-  font-size: 0.85rem;
-  color: hsla(228, 39%, 23%, 0.9);
-  font-family: "BeVietnam-Medium";
-  font-weight: 700 !important;
-}
-.l-nav{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: center;
-}
-.nav-action {
-  align-self: stretch;
-}
-
-.nav-action a {
-  color: rgb(252,198,172);
-  background-color: rgb(243, 97, 60);
-  padding: 0.9rem 2rem;
-  font-size: 0.7rem;
-  font-family: "BeVietnam-ExtraBold";
-  border-radius: 30px;
-  box-shadow: 0 5px 6px 0 rgba(243, 97, 60, 0.4);
-}
-.nav-action a:hover {
-  background-color: rgba(243, 97, 60, 0.76);
-}
-.logo-container img{
-  width: 95%;
-}
-
-/**************** End nav */
-header {
-  background-image: url("../images/bg-tablet-pattern.svg");
-  background-position: 108% -69px;
-  background-size: 53%;
-  background-repeat: no-repeat;
-}
-.header-content {
-  margin: 4rem 8rem 4rem 9rem;
-}
-.header-infos {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-.hinfos {
-  width: 11cm;
-}
-.hinfos h1 {
-  font-size: 3rem;
-  color: hsl(228, 39%, 23%);
-  font-family: "BeVietnam-Bold";
-  margin-bottom: 30px;
-  margin-top: 0 !important;
-}
-.hinfos p {
-  font-size: 1.06rem;
-  width: 9cm;
-  margin-bottom: 2.8rem;
-} 
-.hinfos a, .btn-gst a, .bande-coloree div:last-child a {
-  color: white;
-  padding: 0.7rem 2.2rem;
-  background-color: rgb(243, 97, 60);
-  border-radius: 30px;
-  font-size: 0.8rem;
-  font-family: "BeVietnam-Bold";
-  font-weight: 500;
-  box-shadow: 0 6px 6px 0 rgba(243, 97, 60, 0.69);
-}
-.hinfos a:hover, .btn-gst a:hover, .linkArea-btn:hover {
-  background-color: rgba(243, 97, 60, 0.76);
-} 
-.linkArea-btn:hover {
-  background-color: rgb(230, 94, 60);
-}
-.himage {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: end;
-  align-items: end;
-  
-}
-.himage img {
-  width: 93%;
-}
-
-/**************************** End header  */
-
-/*====================== About manage  */
-
-.about {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 2rem 9rem 4rem 9rem;
-}
-.about h2,.testimonials h2  {
-  color: hsl(228, 39%, 23%);
-  font-family: "BeVietnam-Bold";
-  font-size: 2.2rem;
-}
-.about h2 {
-  width: 12cm;
-}
-.intro p {
-  font-size: .95rem;
-  width: 8cm;
-  line-height: 25px;
-  font-family: "BeVietnam-Medium";
-}
-.details {
-  width: 13cm;
-}
-.item {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.item .number {
-  background-color:  rgb(243, 97, 60);
-  border-radius: 25px;
-  font-size: 1rem;
-  padding: 0.35rem 1.5rem 0.45rem 1.5rem;
-  color: white;
-  text-align: center;
-  font-family: "BeVietnam-Bold";
-}
-.item .content {
-  margin-left: 2rem;
-}
-.item .content h5 {
-  color: hsl(228, 39%, 23%);
-  font-family: "BeVietnam-Bold";
-  font-size: 1rem;
-  margin-bottom: 1.25rem;
-}
-.item .content p {
-  font-size: 0.9rem;
-  font-family: "BeVietnam-Medium";
-  line-height: 25px;
-}
-
-/************* End about manage */
-
-/************* testimonials */
-
-.testimonials {
-  margin-top: 4rem;
-  width: 100%;
-  
-}
-.test_about {
-  background-image: url("../images/bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
-  background-position: -77% 427px;
-  background-size: 55%;
-}
-.testimonials h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  
-}
-
-.testimonials-slider {
-  height: auto;
-  padding-top: 5rem;
-}
-.testi-header img {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  
-}
-.testi-header {
-  text-align: center;
-}
-.testi-item {
-  text-align: center;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  /* padding: 0rem 4rem; */
-}
-.testi-content h5 {
-  color: hsl(228, 39%, 23%);
-  font-family: "BeVietnam-Bold";
-  font-size: 0.9rem;
-}
-.testi-content p {
-  font-size: 0.9rem;
-  width: 20rem;
-  font-family: "BeVietnam-Medium";
-  
-}
-.slick-prev, .slick-next {
-  display: none !important;
-}
-.btn-gst {
-  text-align: center;
-  margin-top: 5rem;
-}
-
-.bande-coloree {
-  margin-top: 11.5rem;
-  background-color: rgb(243, 97, 60);
-  height: 13rem;
-  padding: 0rem 9rem;
-  color: white;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  background-image: url("../images/bg-simplify-section-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: 233px -126px;
-  background-size: cover;
-}
-.bande-coloree h3 {
-  width: 12cm;
-  font-size: 2.3rem;
-  font-family: "BeVietnam-Medium";
-  font-weight: 700;
-}
-.bande-coloree div:last-child a {
-  background-color: white;
-  color: rgb(243, 97, 60);
-}
-/********************* End .testimonials */
-
-/********************** Footer */
-footer, .page-footer {
-  background-color: rgb(30,30,38);
-}
-footer {
-  padding: 4rem 9rem 3rem 9rem;
-}
-footer a {
-  outline: none;
-}
-.footer-container, .activiLegacy {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.footer-container {
-  padding-bottom: 4rem;
-}
-.socialMedia, .page-footer form {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.activiLegacy {
-  width: 18rem;
-}
-.activities li a, .legacy li a {
-  color: #f5f5f5;
-  font-size: 0.9rem;
-  font-family: "BeVietnam-Medium";
-}
-.activities li, .legacy li {
-  padding-bottom: 0.7rem;
-}
-.activities ul, .legacy ul {
-  margin: 0;
-}
-.activities li a:hover, .legacy li a:hover {
-  color: rgb(243, 97, 60);
-}
-.logo-text {
-  fill: white;
-}
-.socialMedia p a:hover path {
-  fill: rgb(243, 97, 60);
-}
-.socialMedia {
-  margin-top: 4.3rem;
-}
-form input { 
-  height: 1.7rem !important;
-  border: none !important;
-  border-radius: 50px !important;
-  color: hsl(257, 7%, 63%) !important;
-  font-size: 0.75rem !important;
-  padding: 0.5rem 1rem !important;
-  margin-right: 0.5rem !important;
-  font-family: "BeVietnam-Medium";
-  background-color: white !important; 
-  border: 2px solid white;
-}
-form input:invalid {
-  border: 2px solid hsl(12, 88%, 59%);
-}
-input:focus {
-  border: none !important;
-  box-shadow: none !important;
-}
-.linkArea-btn {
-  width: auto;
-  background-color: rgb(243, 97, 60);
-  padding: .75rem 1.3rem !important;
-  color: white !important;
-  font-family: "BeVietnam-Bold";
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #149ddd;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
-  border: none;
-  font-size: 0.9rem;
-  cursor: pointer;
+  transition: all 0.4s;
 }
-.linkArea-btn:focus {
-  background-color: rgb(243, 97, 60);
-  outline: none;
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
 }
-.linkArea-btn:visited {
+
+.back-to-top:hover {
+  background: #2eafec;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 305px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 40px;
+  background: #040b14;
+  overflow-y: auto;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 140px;
+  border: 8px solid #2c2f3f;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: #fff;
   text-decoration: none;
 }
-::-webkit-input-placeholder {
-  color: hsl(255, 11%, 22%);
-}
-::-moz-placeholder {
-  color:hsl(255, 11%, 22%);
-}
-:-ms-input-placeholder {
-  color:hsl(255, 11%, 22%);
-}
-::-ms-input-placeholder {
-  color: hsl(255, 11%, 22%);
-}
-::placeholder {
-  color:hsl(255, 11%, 22%);
-}
-.copy {
-  font-size: 0.7rem;
-  color: rgb(134,134,142);
-  font-family: "BeVietnam-Medium";
-  margin-top: 4rem;
-  margin-left: 5rem;
-}
-.reference {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  line-height: 30px;
-  font-family: "BeVietnam-Medium";
-  font-size: 0.9rem;
-}
-.reference p {
-  margin: 0;
-}
-.reference span {
-  color: rgb(243, 97, 60);
-}
 
-/* Sidenav modal */
-.mdl-close {
-  position: absolute;
-  top: 15px;
-  right: 18px;
-  z-index: 111111;
-}
-
-.mdl-close button span {
-  vertical-align: super;
-}
-.mdl-close button:active{
-  background-color: white;
-}
-.mdl-close button {
-  font-size: 2.1rem;
-  font-weight: bold;
-  outline: none;
-  width: 35px;
-  height: 35px;
-  color: #424242;
-  opacity: 1;
-  line-height: 0;
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
   border-radius: 50%;
-  box-shadow: 0 2px 10px 0 #a9d7f694;
-  background-color: #fff;
-  -webkit-appearance: none;
-  padding-bottom: 4px;
-  padding-right: 10px;
-  cursor: pointer;
-  float: right;
-  text-shadow: 0 1px 0 #fff;
-  border: none;
-  text-transform: none;
-  overflow: visible;
-  margin: 0;
   text-align: center;
-  padding: 0px;
-  padding-top: 4px;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
 }
-#navig-mobile {
-  width: 18rem;
-  height: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-radius: 5px;
-  top: 18% !important;
+
+#header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
 }
-#navig-mobile ul {
+
+#main {
+  margin-left: 300px;
+}
+
+.container,
+.container-fluid {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
   display: flex;
-  flex-flow: column wrap;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+  color: #149ddd;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #149ddd;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 3em 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  /* background: #f5f8fd; */
+  background: #f8f9fa;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+  font-family: "BeVietnam-Bold";
+  text-transform: uppercase;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about h1 {
+  /* font-weight: 700; */
+  font-family: "BeVietnam-Bold";
+  font-size: 3em;
+  color: #173b6c !important;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
   align-items: center;
 }
-#navig-mobile ul li {
-  line-height: 40px;
+
+.about .content ul strong {
+  margin-right: 10px;
 }
-#navig-mobile li a {
-  font-size: 1rem;
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 0;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Keywords
+--------------------------------------------------------------*/
+
+.keywords-wrapper {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  flex-wrap: wrap; 
+}
+
+.keywords-container {
+  text-align: left; 
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 6px; 
+}
+
+.keyword {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  border: 2px solid #ccc;
+  border-radius: 9px;
+  background-color: white;
+  white-space: nowrap;
+}
+
+/*-------------------
+# Education
+---------------------*/
+
+.about .education {
+  padding-top: 3em;
+  position: relative;
+}
+
+.about .education-title {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 1em ;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #214d8b;
+}
+
+
+.about .education-item {
+  padding: 0 0 40px 25px;
+  margin-top: -2px;
+  margin-left: 30px;
+  border-left: 3px solid #1f5297;
+  position: relative;
+}
+
+.about .education-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.about .education-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.education .university
+{
+  font-style: italic;
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 10px;
+} 
+
+.about .education-item .description {
+  margin-top: .7em;
+}
+
+.about .education-item:last-child {
+  padding-bottom: 0;
+}
+
+.about .education-item::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/*--------------------------------------------------------------
+# Publications
+--------------------------------------------------------------*/
+
+.publications-content {
+  padding-left: 20px;
+}
+
+.publications .where {
+  text-align: right;
+  font-size: 1.2em;
+  color: #149ddd;
+  font-weight: bold;
+}
+
+.publications h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
   font-family: "BeVietnam-Bold";
-  outline: none;
 }
-#navig-mobile li a:hover {
-  background-color: transparent;
+.publications strong {
+  font-family: "BeVietnam-Bold";
 }
-/******************** Responsive */
-.nav-mobile {
-  display: none;
+.publications .availability a {
+  border-radius: 8px !important;
+  font-size: .9em;
+  border-color: #1f5297;
+  color: #1f5297;
+  
 }
-@media only screen and (max-width: 992px) {
-  .nav-mobile {
-    display: inline-block;
-  }
-  .nav-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header-infos {
-    flex-flow: column-reverse wrap;
-  }
+.publications .availability a:hover {
+  background-color: #1f5297;
+  border-color: #333;
+  color: white;
 }
-@media only screen and (max-width: 992px) {
-  .logo-container img{
-    width: 109%;
-  }
-  nav {
-    padding: 4rem 2rem;
-  }
-  .header-content {
-    margin: 0 2rem
-  }
-  .himage img {
-    width: 100%;
-  }
-  .hinfos h1 {
-    margin-top: 2rem !important;
-    font-size: 2rem !important;
-  }
-  .hinfos, .hinfos p, .intro, .intro p, .about h2 {
+
+/*--------------------------------------------------------------
+# Teaching
+--------------------------------------------------------------*/
+
+.teaching-content {
+  padding-left: 20px;
+}
+.course {
+  margin-bottom: 2.5em;
+}
+.course-item {
+  margin-left: 30px;
+
+}
+.course-title {
+  /* color: darkred !important; */
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.course-info{
+  /* width: 70%; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin-left: 30px; */
+}
+
+.course-info i {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+
+.course-details .course-hours {
+  font-family: "BeVietnam-Bold";
+}
+.course-details .course-description span{
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Talks
+--------------------------------------------------------------*/
+
+.talk-info {
+  /* width: 40%; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  gap: 10px;
+  margin-left: 30px;
+}
+.talk-info i {
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.talk-title h4 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.talk {
+  margin-bottom: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# Dissemination
+--------------------------------------------------------------*/
+.dissemination .dissemination-content{
+  margin-left: 30px;
+}
+
+.dissemination .dissemination-content h3 {
+  font-weight: 700;
+  /* margin-top: 20px; */
+  margin-bottom: 1em ;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #214d8b;
+}
+
+.dissemination .services {
+  margin-bottom: 3em;
+}
+
+.dissemination .outreach-content {
+  margin-left: 30px;
+}
+
+.outreach-content h4 {
+  font-weight: 500;
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.dissemination .outreach-content .outreach-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dissemination .outreach-content .outreach-list > li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 1em;
+}
+
+.dissemination .outreach-content .outreach-list i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 1;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact-content {
+  margin-left: 30px;;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #040b14;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #eaebf0;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
     width: auto;
-    text-align: center;
-  }
-  .about {
-    flex-flow: column wrap;
-    padding: 2rem 1rem 4rem 1rem;
-  }
-  .intro h2 {
-    font-size: 1.8rem;
-  }
-  .intro {
-    margin-bottom: 3rem;
-    padding: 0 1rem;
-  }
-  .details {
-    width: auto;
-  }
-  .content div {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .content div p {
-    margin-left: -4.5rem;
-  }
-  .item {
-    margin-bottom: 2rem;
-  }
-  .item .content {
-    margin-left: 0rem;
-    padding-left: 1rem;
-  }
-  .testimonials {
-    margin-top: 1rem;
-  }
-  .testimonials h2 {
-    font-size: 1.8rem;
-  }
-  .btn-gst {
-    margin-top: 7rem;
-  }
-  .bande-coloree {
-    margin-top: 6rem;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    height: 23rem;
-    padding: 0 2rem;
-    background-position: -379px -59px
-  }
-  .bande-coloree h3 {
-    font-size: 1.9rem;
-    width: auto;
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 0;
-  }
-  .footer-container {
-    flex-flow: column-reverse wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  footer {
-    padding: 4rem 2rem 3rem 2rem;
-  }
-  .copy {
-    display: none;
-  }
-  .activiLegacy {
-    width: 16rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  .f-infos {
-    display: flex;
-    flex-flow: column-reverse wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .socialMedia {
-    margin-top: 0rem;
-    width: 16rem;
-    margin-bottom: 3rem;
-  }
-  .reference {
-    display: block;
-    text-align: center;
-  }
-  header {
-    background-position: 35px -34px;
-    background-size: 100%;
-  }
-  .test_about {
-    background-image: none;
-  }
-  .about {
-    background-image: url("../images/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-    background-position: 166px 75px;
-    background-size: 100%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  header {
-    background-position: 195px -37px;
-    background-size: 75%;
-  }
-}
-@media only screen and (min-width: 360px) and (max-width: 499px) {
-  .about {
-    background-position: 301px -52px;
-  }
-}
-@media only screen and (min-width: 500px) and (max-width: 600px) {
-  .about {
-    background-size: 75%;
-    background-position: 354px -7px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 767px) {
-  header {
-    background-position: 337px -37px;
-    background-size: 65%;
-  }
-  .about {
-    background-image: url("../images/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-    background-position: 510px -22px;
-    background-size: 65%;
-  }
-  header, .about, .testimonials {
-    padding-right: 4rem;
-    padding-left: 4rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  header {
-    background-position: 495px -84px;
-    background-size: 55%;
-  }
-  .about {
-    background-image: url("../images/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-    background-position: 839px -79px;
-    background-size: 55%;
-  }
-  header, .about, .testimonials {
-    padding-right: 6rem;
-    padding-left: 6rem;
+    padding-right: 20px 15px;
   }
 }
