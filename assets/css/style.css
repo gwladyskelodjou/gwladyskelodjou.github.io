@@ -558,6 +558,12 @@ section {
   font-size: 1.1em;
   margin-bottom: 1em;
 }
+.talk-title p {
+  margin-left: 30px;
+}
+.talk-title p span{
+  font-weight: bold;
+}
 .talk {
   margin-bottom: 1.5em;
 }
